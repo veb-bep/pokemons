@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+input, button, textarea, select, option {
+    font-family: inherit;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.big {
+    background-color: dodgerblue;
+    color: white;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.title {
+    font-size: 35px;
+}
+.input {
+    width: 230px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+}
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 100px;
+}
+.box {
+    border: 4px solid dodgerblue;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 270px;
+    padding: 15px;
+    box-shadow: 0 0 15px -5px black;
+}
+.queue {
+    position: absolute;
+    top: 10px; 
+    right: 15px;
+    font-weight: bold;
+    color: rgb(0, 211, 211);
+    font-size: 18px;
+}
+.queue::before {
+    content: "#";
+}
+.pic {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.name {
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    color: dodgerblue;
+}
